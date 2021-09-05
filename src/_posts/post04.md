@@ -5,8 +5,18 @@
 
 # white color
 
-![](https://i.pinimg.com/474x/fd/6c/45/fd6c453ea21b57554339b2d6488bc76b.jpg)
+![](https://i.imgur.com/P1bkmUW.gif)
 
-## sin wave
+## i am scared of watching black color
 
-...
+im not sure, but here is what im thinking: 
+
+- i am white, which is positive part in sine wave
+
+- thats why i can predict what is next by watching black
+
+- but at the same time, it doesnt mean i am the happy part of my life or not.
+
+# wait, am i looping????
+
+fucking yes you fuck

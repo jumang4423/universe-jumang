@@ -8,11 +8,7 @@ export const BlogIndex = (blogs) => () => {
 
     <div className={"margin_12 App"}>
 
-      <a
-        href="https://imgur.com/nyiq8aP"
-        className={""}>
-        <img width={"60%"} src="https://i.imgur.com/nyiq8aP.gif" className={"margin_12"} title="i am everywhere" />
-      </a>
+      <img src="https://i.imgur.com/zKLWbeN.gif" className={"margin_12"} title="i am everywhere" />
 
       <h1 className={"title"}> jumang universe </h1>
 
@@ -25,19 +21,20 @@ export const BlogIndex = (blogs) => () => {
       {/* 線 */}
       <hr className={"width50p"} />
 
-      <div className={"App"}>
-        <ul className={"width50px"}>
-          {[...blogs.keys()].map(path =>
-            <li key={path}>
-              <Link to={'/' + path} className={"link-deco-fuck"}>
-                <h2>
-                  {blogs.get(path).title || path}
-                </h2>
-              </Link>
-            </li>
-          )}
-        </ul>
-      </div>
+      <h2 className={"lefter"}> {[...blogs.keys()].length} posts</h2>
+
+      {/* 線 */}
+      <hr className={"width50p"} />
+
+      {[...blogs.keys()].map((path) =>
+        <div key={path}>
+          <Link to={'/' + path} className={"link-deco-fuck"}>
+            <h2>
+              {blogs.get(path).title || path}
+            </h2>
+          </Link>
+        </div>
+      )}
 
     </div>
   )

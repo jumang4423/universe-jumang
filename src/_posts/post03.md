@@ -20,3 +20,14 @@ one day, i watered a frog at familymart since he were so dry
 next day, he were the same place. again i watered a frog!
 
 third day, he were gone. but i know he is doing well
+
+![](https://i.imgur.com/efvisfnb.jpg)
+
+## again, why i making someone happy?
+
+i were hurting someone, so i helped someone.
+
+it literally does not make sense.
+
+you do?
+
