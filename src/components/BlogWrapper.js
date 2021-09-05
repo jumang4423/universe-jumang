@@ -12,7 +12,6 @@ export const BlogWrapper = ({ __content }) => () => {
                 </div>
             </Link>
 
-            {/* 線 */}
             <hr />
 
             <div className='markdown-body' dangerouslySetInnerHTML={{ __html: __content }}>

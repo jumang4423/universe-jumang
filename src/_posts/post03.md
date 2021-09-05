@@ -1,9 +1,9 @@
 ---
-  title: worth
+  title: me do me
   author: jumang
 ---
 
-# worth
+# me do me
 
 ## sometimes i hurt me and you to protect myself even doe i dont want to hurt
 
@@ -30,4 +30,3 @@ i were hurting someone, so i helped someone.
 it literally does not make sense.
 
 you do?
-

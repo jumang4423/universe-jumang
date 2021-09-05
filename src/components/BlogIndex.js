@@ -4,6 +4,32 @@ import "../styles/blogIndex.css"
 
 // トップページのUI
 export const BlogIndex = (blogs) => () => {
+
+  const blog_meta_sort = () => {
+    return [...blogs.keys()]
+      .map(path => {
+
+        let blog_meta = Object.assign({}, blogs.get(path))
+        blog_meta.filename = path
+        return blog_meta
+      })
+      .sort((a, b) => {
+        let fa = a.title.toLowerCase(),
+          fb = b.title.toLowerCase();
+
+        if (fa < fb) {
+          return -1;
+        }
+        if (fa > fb) {
+          return 1;
+        }
+        return 0;
+      })
+      .map(metas => {
+        return metas.filename
+      })
+  }
+
   return (
 
     <div className={"margin_12 App"}>
@@ -26,7 +52,7 @@ export const BlogIndex = (blogs) => () => {
       {/* 線 */}
       <hr className={"width50p"} />
 
-      {[...blogs.keys()].map((path) =>
+      {blog_meta_sort().map((path) =>
         <div key={path}>
           <Link to={'/' + path} className={"link-deco-fuck"}>
             <h2>
