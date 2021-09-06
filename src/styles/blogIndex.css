@@ -6,8 +6,11 @@
     font-size: 52px;
 }
 
-
 .lefter {
     margin-bottom: 32px;
     margin-top: 32px;
+}
+
+.App {
+    text-align: center;
 }

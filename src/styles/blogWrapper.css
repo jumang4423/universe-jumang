@@ -1,9 +1,19 @@
 h1 {
     font-family: FCODE;
+    background-color:aliceblue;
+    padding: 8px;
+}
+
+h2 {
+    width: fit-content;
+    font-family: FCODE;
+    background-color:aliceblue;
 }
 
 p {
     font-family: FCODE;
+    /* background-color:floralwhite; */
+    width: fit-content;
 }
 
 .back_wrapper {

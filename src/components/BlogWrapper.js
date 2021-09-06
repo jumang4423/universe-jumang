@@ -5,17 +5,22 @@ import "../styles/blogWrapper.css"
 // ブログページのUI
 export const BlogWrapper = ({ __content }) => () => {
     return (
-        <div className={"margin_12"}>
-            <Link to='/' className={"link-deco-fuck"}>
-                <div className={"back_wrapper"}>
-                    BACK
-                </div>
-            </Link>
+
+        <div className={"fuckyouoverscroll"}>
+
+            <div className={"margin_12 wrawra"}>
+                <Link to='/' className={"link-deco-fuck"}>
+                    <div className={"back_wrapper"}>
+                        BACK
+                    </div>
+                </Link>
 
             <hr />
 
             <div className='markdown-body' dangerouslySetInnerHTML={{ __html: __content }}>
             </div>
         </div>
+
+        </div >
     )
 }
