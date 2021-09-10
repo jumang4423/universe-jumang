@@ -83,7 +83,7 @@ export const BlogIndex = (thought_blogs, note_blogs) => () => {
         {/* 線 */}
         <hr className={"width50p"} />
 
-        <h1 className={"lefter"}> thought | {[...thought_blogs.keys()].length} post{[...note_blogs.keys()].length != 1 && "s"}</h1>
+        <h1 className={"lefter"}> thought | {[...thought_blogs.keys()].length} post{[...thought_blogs.keys()].length === 1 ? "" : "s"}</h1>
 
         {/* 線 */}
         <hr className={"width50p"} />
@@ -103,7 +103,7 @@ export const BlogIndex = (thought_blogs, note_blogs) => () => {
         {/* 線 */}
         <hr className={"width50p"} />
 
-        <h1 className={"lefter"}> note | {[...note_blogs.keys()].length} post{[...note_blogs.keys()].length != 1 && "s"}</h1>
+        <h1 className={"lefter"}> note | {[...note_blogs.keys()].length} post{[...note_blogs.keys()].length === 1 ? "" : "s"}</h1>
 
         {/* 線 */}
         <hr className={"width50p"} />
