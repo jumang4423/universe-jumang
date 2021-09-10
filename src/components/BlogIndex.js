@@ -90,11 +90,13 @@ export const BlogIndex = (thought_blogs, note_blogs) => () => {
 
         {thoguth_blog_meta_sort().map((path) =>
           <div key={path}>
-            <Link to={'/' + path} className={"link-deco-fuck"}>
-              <div className={"post_title"}>
-                {thought_blogs.get(path).title || path}
-              </div>
-            </Link>
+            <div onClick={() => { window.scrollTo(0, 0); }}>
+              <Link to={'/' + path} className={"link-deco-fuck"}>
+                <div className={"post_title"}>
+                  {thought_blogs.get(path).title || path}
+                </div>
+              </Link>
+            </div>
           </div>
         )}
 
@@ -108,11 +110,13 @@ export const BlogIndex = (thought_blogs, note_blogs) => () => {
 
         {note_meta_sort().map((path) =>
           <div key={path}>
-            <Link to={'/' + path} className={"link-deco-fuck"}>
-              <div className={"post_title"}>
-                {note_blogs.get(path).title || path}
-              </div>
-            </Link>
+            <div onClick={() => { window.scrollTo(0, 0); }}>
+              <Link to={'/' + path} className={"link-deco-fuck"}>
+                <div className={"post_title"}>
+                  {note_blogs.get(path).title || path}
+                </div>
+              </Link>
+            </div>
           </div>
         )}
 
