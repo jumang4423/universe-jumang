@@ -7,15 +7,28 @@ import { BlogWrapper } from './components/BlogWrapper'
 function App() {
 
   // フォルダーからmarkdownをとってくる
-  const mdFolder = require
-    .context('!markdown-with-front-matter-loader!./_posts', false, /.md$/)
+  const thought_mdFolder = require
+    .context('!markdown-with-front-matter-loader!./_thought_posts', false, /.md$/)
 
-  const blogs = mdFolder
+  const thought_blogs = thought_mdFolder
     .keys()
     .reduce(
       (memo, fileName) => memo
         .set(fileName.match(/.\/([^.]+).*/)[1],
-          mdFolder(fileName)),
+          thought_mdFolder(fileName)),
+      new Map()
+    )
+
+  // フォルダーからmarkdownをとってくる
+  const note_mdFolder = require
+    .context('!markdown-with-front-matter-loader!./_note_posts', false, /.md$/)
+
+  const note_blogs = note_mdFolder
+    .keys()
+    .reduce(
+      (memo, fileName) => memo
+        .set(fileName.match(/.\/([^.]+).*/)[1],
+        note_mdFolder(fileName)),
       new Map()
     )
 
@@ -25,13 +38,20 @@ function App() {
         <Route path="/">
 
           {/* 最初のページのルートを作成 */}
-          <IndexRoute key='index' component={BlogIndex(blogs)} />
+          <IndexRoute key='index' component={BlogIndex(thought_blogs, note_blogs)} />
 
           {/* 各ページのルート(/post01, /post02など)を作成 */}
           {
-            [...blogs.keys()]
+            [...thought_blogs.keys()]
               .map(path =>
-                <Route key={path} path={path} component={BlogWrapper(blogs.get(path))} />
+                <Route key={path} path={path} component={BlogWrapper(thought_blogs.get(path))} />
+              )
+          }
+
+{
+            [...note_blogs.keys()]
+              .map(path =>
+                <Route key={path} path={path} component={BlogWrapper(note_blogs.get(path))} />
               )
           }
 

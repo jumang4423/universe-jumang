@@ -3,7 +3,8 @@
 }
 
 .title {
-    font-size: 52px;
+    font-size: 4em;
+    padding: 16px;
 }
 
 .lefter {
@@ -12,5 +13,21 @@
 }
 
 .App {
-    text-align: center;
+    /* text-align: center; */
+}
+
+.post_title {
+    text-align: left;
+    font-size: x-large;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .rotate {
+        animation: App-logo-spin infinite 4s linear;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
