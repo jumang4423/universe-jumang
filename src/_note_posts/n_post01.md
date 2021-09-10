@@ -29,6 +29,8 @@ solving some technical issues given by DMM staff, and get a point.
 
 1 hour, 1500yen ($14 around)
 
+![](https://i.imgur.com/l3v4P3s.jpeg)
+
 ## what i did
 
 since I were getting interested in developing native apps (iOS and Android) and backend, doe i were considering solving problems related to golang backend and react frontend, I challenged completely another area of CS.
