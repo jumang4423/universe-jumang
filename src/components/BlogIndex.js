@@ -59,19 +59,26 @@ export const BlogIndex = (thought_blogs, note_blogs) => () => {
 
     <div className={"fuckyouoverscroll"}>
 
-      <div className={"margin_12 all"}>
+      <div className={"all margin_12"}>
 
         {/* <img src="https://github.com/jumang4423/jumang4423/raw/master/_design/jima.png" width={"95%"} className={"margin_12 pic_cc"} title="i am everywhere" /> */}
 
         <div className={'center'}>
           <div className={"title flex-row"}>
-            <div className={"center rotate"}>☯</div>
-            jumang universe
-            <div className={"center rotate"}>☯</div>
+            {/* <div className={"center rotate"}>☯</div> */}
+            jumang
+            universe
+            {/* <div className={"center rotate"}>☯</div> */}
           </div>
         </div>
 
-        <h2> im everywhere </h2>
+        <h2 className={"flex-row"}>
+          im everywhere
+          <div className={"width-100"}>
+            <div className={"center rotate"}>☯</div>
+          </div>
+
+        </h2>
 
         {/* 線 */}
         <hr className={"width50p"} />

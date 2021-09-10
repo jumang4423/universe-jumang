@@ -1,5 +1,5 @@
 .margin_12 {
-    margin: 16px;
+    padding: 16px;
 }
 
 .title {
@@ -35,8 +35,4 @@
 .flex-row {
     display: flex;
     flex-direction: row;
-}
-
-.all {
-    width: 100vw;
 }
