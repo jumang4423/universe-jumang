@@ -3,8 +3,9 @@
 }
 
 .title {
-    font-size: 4em;
+    font-size: 3em;
     padding: 16px;
+    background-color:aliceblue;
 }
 
 .lefter {
@@ -12,8 +13,10 @@
     margin-top: 32px;
 }
 
-.App {
-    /* text-align: center; */
+.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .post_title {
@@ -24,10 +27,16 @@
 @media (prefers-reduced-motion: no-preference) {
     .rotate {
         animation: App-logo-spin infinite 4s linear;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.all {
+    width: 100vw;
 }
